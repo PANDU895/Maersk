@@ -1,4 +1,4 @@
-package com.MaerskTest;
+package com.OrderEngine;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class FirstTEst {
+public class CaleculateOrderAmount {
 	
 	private static Map<String, Integer> unitPrice = new HashMap<>();
 	private static Map<String, Integer> promotionMultiply = new HashMap<>();
