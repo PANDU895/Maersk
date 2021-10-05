@@ -1,4 +1,4 @@
-package com.OrderEngine;
+package com.order.engine;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -43,6 +43,11 @@ public class CaleculateOrderAmount {
 		if(temp >0)
 			inputMap.put("D", temp);
 
+		int total = caleculateTotal(inputMap);
+		System.out.println(total);
+	}
+
+	public static int caleculateTotal(Map<String, Integer> inputMap) {
 		Iterator<String> promotionKeys;
 		Iterator<String> inputKeys = inputMap.keySet().iterator();
 		String inputString;
@@ -111,7 +116,7 @@ public class CaleculateOrderAmount {
 				total = total + unitPrice.get(inputAdd.next());
 			}
 		}
-		System.out.println(total);
+		return total;
 	}
 
 }
